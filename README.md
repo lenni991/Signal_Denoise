@@ -1,4 +1,4 @@
-# Signal_Denoise
+# Signal Denoising
 Signal Denoising Using Integer Wavelet Transformation
 
 
