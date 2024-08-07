@@ -15,4 +15,5 @@ it can be used to analyze signals in time–frequency space and reduce noise, wh
 •	and Sure minimax 
 
 >**Ploting the signal**
->![image](https://user-images.githubusercontent.com/82563121/219986007-bba92846-8ae5-462a-9eca-7aae6ae4510b.png)
+![alt text](image.png)
+
