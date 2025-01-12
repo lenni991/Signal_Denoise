@@ -14,10 +14,9 @@ def denoise_signal(signal, wavelet='db4', level=6, noise_std=0.1):
         # Reconstruct the signal from the denoised coefficients
         denoised_signal = pywt.waverec(denoised_coeffs, wavelet)
 
-        # Ensure the reconstructed signal has the same length as the original signal
+        # Ensuring the reconstructed signal has the same length as the original signal
         denoised_signal = denoised_signal[:len(signal)]
 
-        # Calculate SNR
         noise = signal - denoised_signal
         snr = 20 * np.log10(np.linalg.norm(signal) / np.linalg.norm(noise))
 
@@ -44,7 +43,7 @@ original_signal = np.random.randn(1000)
 noise = 0.1 * np.random.randn(1000)
 noisy_signal = original_signal + noise
 
-# Denoise the signal
+# Denoising
 denoised_signal, snr = denoise_signal(noisy_signal)
 
 
